@@ -1,7 +1,7 @@
-::-webkit-input-placeholder {font-family: 'latoRegular';color: white;font-size: 18px;}
-::-moz-placeholder {font-family: 'latoRegular';color: white;font-size: 18px;}/* Firefox 19+ */
-:-moz-placeholder {font-family: 'latoRegular';color: white;font-size: 18px;}/* Firefox 18- */
-:-ms-input-placeholder {font-family: 'latoRegular';color: white;font-size: 18px;}
+::-webkit-input-placeholder {font-family: $hRoman;color: #8c8c8c;font-size: 18px;}
+::-moz-placeholder {font-family: $hRoman;color: #8c8c8c;font-size: 18px;}/* Firefox 19+ */
+:-moz-placeholder {font-family: $hRoman;color: #8c8c8c;font-size: 18px;}/* Firefox 18- */
+:-ms-input-placeholder {font-family: $hRoman;color: #8c8c8c;font-size: 18px;}
 
 * {box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
 .center {text-align: center;}

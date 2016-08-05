@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 	$('#feedback-valid-1').validate({
 		rules:{
-			"phone":{required:true}
+			"texta":{required:true}
 		},
 		messages:{
-			"phone":{required:""}
+			"texta":{required:""}
 		},
 		submitHandler: function(form){
 			$(form).ajaxSubmit({
@@ -17,10 +17,10 @@ $(document).ready(function() {
 						.val('')
 						.removeAttr('checked')
 						.removeAttr('selected');
-							// window.location.href = "thx1.html";
-							$.fancybox.close()
-							var message = $('.modal');
-							$.fancybox(message);
+						 window.location.href = "thx1.html";
+							// $.fancybox.close()
+							// var message = $('.modal');
+							// $.fancybox(message);
 
 						}
 					}  

@@ -26,7 +26,7 @@
 
 .hide {display: none;}
 
-h4 {
+h4, h3, p {
 	margin: 0;
 	padding: 0;
 }
@@ -39,8 +39,9 @@ ul {
 }
 
 header {
-	padding-top: 80px;
+	padding-top: 35px;
 	&.main-header {
+		padding-top: 80px;
 		padding-bottom: 92px;
 	}
 }
@@ -360,12 +361,147 @@ img.wave {
 	font-size: 18px;
 	-webkit-border-radius: 37px;
 	border-radius: 37px;
+	&:hover {
+		background: #eaac04;
+	}
+	&:active {
+		-webkit-transform: translateY(1px);    
+		-ms-transform: translateY(1px);    
+		transform: translateY(1px);
+	}
 	&.btn-1 {
 		font-size: 30px;
 		padding-left: 120px;
 		padding-right: 120px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+	font-size: 48px;
+	font-family: $hBold;
+	display: inline-block;
+	&.icon-1 {
+		background: url(../img/icon-1.png) right 3px no-repeat;
+		padding: 25px 110px 35px 0;
+	}
+	&.icon-f {
+		background: url(../img/icon-f.jpg) right 25px no-repeat;
+		padding: 25px 70px 25px 0;
+	}
+	&.icon-thx {
+		background: url(../img/icon-thx.jpg) right 15px no-repeat;
+		padding: 15px 62px 15px 0;
+	}
+}
+
+
+.stat {
+	padding-bottom: 140px;
+	.statistic-wrapp {
+		padding-top: 137px;
+	}
+}
+.section-goals {
+	padding-top: 110px;
+	text-align: right;
+	.left-l {
+		text-align: left;
+		p {
+			font-size: 24px;
+			line-height: 29px;
+			font-family: $hLight;
+			b {
+				font-family: $hRoman;
+				font-weight: normal;
+				display: block;
+				margin-top: 30px;
+			}
+		}
+	}
+	.open-link {
+		margin-top: 44px;
+		background: url(../img/icon-1-sm.png) left top no-repeat;
+		display: inline-block;
+		padding-left: 31px;
+		padding-top: 2px;
+		font-family: $hLight;
+		color: black;
+		font-size: 14px;
+		line-height: 18px;
+		text-decoration: underline;
+		position: relative;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.left-l {
+	width: 720px;
+	float: left;
+}
+
+.projects {
+	display: block;
+	margin: 0 auto 115px;
+	box-shadow: 0 28px 49px rgba(26, 46, 239, .2);
+}
+
+.section-feedback {
+	padding-bottom: 146px;
+}
+
+.date {
+	margin-top: 8px;
+	width: 220px;
+	float: right;
+	padding: 24px 0 17px;
+	border-bottom: 1px solid #ffbb04;
+	border-top: 1px solid #ffbb04;
+	font-family: $hBold;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.person-wrapp {
+	margin-bottom: 31px;
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	span {
+		margin-left: 19px;
+		font-size: 18px;
+		line-height: 18px;
+		font-family: $hLight;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.size-1 {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+
+
 
 
 
