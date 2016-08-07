@@ -685,10 +685,10 @@ img.wave.w2 {
 .project-wrapp .project-item a {
   display: inline-block;
   text-decoration: none;
+  margin-bottom: 33px;
 }
 .project-wrapp .project-item img {
   display: block;
-  margin-bottom: 33px;
 }
 .project-wrapp .project-item .head {
   color: #636363;
