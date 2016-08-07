@@ -400,12 +400,20 @@ h3 {
 		background: url(../img/icon-1.png) right 3px no-repeat;
 		padding: 25px 110px 35px 0;
 	}
+	&.icon-2 {
+		background: url(../img/icon-2.png) right 3px no-repeat;
+		padding: 25px 110px 35px 0;
+	}
+	&.icon-3 {
+		background: url(../img/icon-3.png) right 3px no-repeat;
+		padding: 25px 110px 35px 0;
+	}
 	&.icon-f {
-		background: url(../img/icon-f.jpg) right 25px no-repeat;
+		background: url(../img/icon-f.jpg) right 20px no-repeat;
 		padding: 25px 70px 34px 0;
 	}
 	&.icon-thx {
-		background: url(../img/icon-thx.jpg) right 15px no-repeat;
+		background: url(../img/icon-thx.jpg) right 10px no-repeat;
 		padding: 15px 62px 15px 0;
 	}
 }
@@ -448,6 +456,12 @@ h3 {
 		position: relative;
 		&:hover {
 			text-decoration: none;
+		}
+		&.sm-2 {
+			background: url(../img/icon-2-sm.png) left top no-repeat;
+		}
+		&.sm-3 {
+			background: none;
 		}
 	}
 }
