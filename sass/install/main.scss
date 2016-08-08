@@ -50,14 +50,13 @@ header {
 	text-decoration: none;
 	img {
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 		margin-right: 25px;
 	}
 	span {
-		margin-top: 11px;
 		font-size: 18px;
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 		color: black;
 	}
 }
@@ -145,6 +144,7 @@ img.wave {
 		}
 		img {
 			display: block;
+			
 		}
 		.head {
 			color: #636363;
@@ -172,7 +172,6 @@ img.wave {
 					content: '';
 					display: block;
 					position: absolute;
-					top: 4px;
 					left: 0;
 					width: 5px;
 					height: 5px;
@@ -180,6 +179,10 @@ img.wave {
 					border-radius: 50%;
 					-webkit-border-radius: 50%;
 					-moz-border-radius: 50%;
+					top: 50%;
+					-webkit-transform: translateY(-50%);    
+					-ms-transform: translateY(-50%);    
+					transform: translateY(-50%);
 				}
 				&:last-child {margin-bottom: 0;}
 			}
@@ -397,23 +400,23 @@ h3 {
 	font-family: $hBold;
 	display: inline-block;
 	&.icon-1 {
-		background: url(../img/icon-1.png) right 3px no-repeat;
-		padding: 25px 110px 35px 0;
+		background: url(../img/icon-1.png) right center no-repeat;
+		padding: 30px 110px 30px 0;
 	}
 	&.icon-2 {
-		background: url(../img/icon-2.png) right 3px no-repeat;
-		padding: 25px 110px 35px 0;
+		background: url(../img/icon-2.png) right center no-repeat;
+		padding: 30px 110px 30px 0;
 	}
 	&.icon-3 {
 		background: url(../img/icon-3.png) right 3px no-repeat;
 		padding: 25px 110px 35px 0;
 	}
 	&.icon-f {
-		background: url(../img/icon-f.jpg) right 20px no-repeat;
-		padding: 25px 70px 34px 0;
+		background: url(../img/icon-f.jpg) right center no-repeat;
+		padding: 30px 70px 30px 0;
 	}
 	&.icon-thx {
-		background: url(../img/icon-thx.jpg) right 10px no-repeat;
+		background: url(../img/icon-thx.jpg) right center no-repeat;
 		padding: 15px 62px 15px 0;
 	}
 }
@@ -444,7 +447,7 @@ h3 {
 	}
 	.open-link {
 		margin-top: 44px;
-		background: url(../img/icon-1-sm.png) left top no-repeat;
+		background: url(../img/icon-1-sm.png) left center no-repeat;
 		display: inline-block;
 		padding-left: 31px;
 		padding-top: 2px;
@@ -458,7 +461,7 @@ h3 {
 			text-decoration: none;
 		}
 		&.sm-2 {
-			background: url(../img/icon-2-sm.png) left top no-repeat;
+			background: url(../img/icon-2-sm.png) left center no-repeat;
 		}
 		&.sm-3 {
 			background: none;
