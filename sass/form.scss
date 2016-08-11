@@ -57,7 +57,10 @@ button[type=submit] {
       content: '';
       position: absolute;
       opacity: 0;
-      top: -2px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
       width: 20px;
       height: 19px;
       background: url(../img/r-arrow.png) no-repeat;

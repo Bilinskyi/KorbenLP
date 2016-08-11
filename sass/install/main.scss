@@ -41,7 +41,7 @@ ul {
 header {
 	padding-top: 35px;
 	&.main-header {
-		padding-top: 80px;
+		padding-top: 35px;
 		padding-bottom: 92px;
 	}
 }
@@ -85,6 +85,7 @@ header {
 		border-bottom: 1px solid #3c12bc;
 		&:hover {
 			border-bottom: 1px solid #d04000;
+			color: #d04000;
 		}
 	}
 	& + .title-small {
@@ -142,7 +143,7 @@ img.wave {
 			text-decoration: none;
 			margin-bottom: 33px;
 			&:hover {
-				    box-shadow: 0 3px 10px rgba(26,46,239,0.25);
+				box-shadow: 0 3px 10px rgba(26,46,239,0.25);
 			}
 		}
 		img {
@@ -378,7 +379,10 @@ img.wave {
 			content: '';
 			position: absolute;
 			opacity: 0;
-			top: -2px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
 			width: 20px;
 			height: 19px;
 			background: url(../img/r-arrow.png) no-repeat;
@@ -409,15 +413,10 @@ img.wave {
 		}
 		span {
 			&:after {
-				content: '';
-				position: absolute;
-				opacity: 0;
-				top: 0px;
 				width: 26px;
 				height: 25px;
 				background: url(../img/r-arrow-b.png) no-repeat;
 				right: -30px;
-				transition: 0.5s;
 			}
 		}
 	}
@@ -434,12 +433,6 @@ img.wave {
 		}
 		span {
 			&:after {
-				content: '';
-				position: absolute;
-				opacity: 0;
-				top: -2px;
-				width: 20px;
-				height: 19px;
 				background: url(../img/l-arrow.png) no-repeat;
 				left: -20px;
 				transition: 0.5s;
