@@ -36,20 +36,48 @@ textarea {
 }
 
 
-input[type=submit] {
+button[type=submit] {
   display: inline-block;
   outline: none;
   border: none;
-  padding: 22px 65px 21px;
+  padding: 22px 5px 21px;
   background-color: #ffbb04;
   color: black;
   font-size: 18px;
   -webkit-border-radius: 37px;
   border-radius: 37px;
   font-family: $hRoman;
+  width: 220px; 
+  span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-align: center;
+    &:after {
+      content: '';
+      position: absolute;
+      opacity: 0;
+      top: -2px;
+      width: 20px;
+      height: 19px;
+      background: url(../img/r-arrow.png) no-repeat;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+  }
+  
+
   &:hover {
     background: #eaac04;
     cursor: pointer;
+    span {
+      padding-right: 30px;
+      &:after {
+        opacity: 1;
+        right: 0px;
+      }
+    }
   }
   &:active {
     -webkit-transform: translateY(1px);    

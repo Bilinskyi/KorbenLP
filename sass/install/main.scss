@@ -84,7 +84,7 @@ header {
 		display: inline-block;
 		border-bottom: 1px solid #3c12bc;
 		&:hover {
-			border-bottom: 1px solid transparent;
+			border-bottom: 1px solid #d04000;
 		}
 	}
 	& + .title-small {
@@ -141,6 +141,9 @@ img.wave {
 			display: inline-block;
 			text-decoration: none;
 			margin-bottom: 33px;
+			&:hover {
+				    box-shadow: 0 3px 10px rgba(26,46,239,0.25);
+			}
 		}
 		img {
 			display: block;
@@ -356,6 +359,7 @@ img.wave {
 
 
 .button {
+
 	text-decoration: none;
 	display: inline-block;
 	padding: 23px 25px 22px;
@@ -364,19 +368,91 @@ img.wave {
 	font-size: 18px;
 	-webkit-border-radius: 37px;
 	border-radius: 37px;
+	text-align: center;
+	span {
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+		text-align: center;
+		&:after {
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: -2px;
+			width: 20px;
+			height: 19px;
+			background: url(../img/r-arrow.png) no-repeat;
+			right: -20px;
+			transition: 0.5s;
+		}
+
+	}
 	&:hover {
 		background: #eaac04;
 	}
+	&:hover span {
+		padding-right: 30px;
+		&:after {
+			opacity: 1;
+			right: 0px;
+		}
+	}
+	&.btn-1 {
+		width: 480px;
+		font-size: 30px;
+		&:hover span {
+			padding-right: 45px;
+			&:after {
+				opacity: 1;
+				right: 0px;
+			}
+		}
+		span {
+			&:after {
+				content: '';
+				position: absolute;
+				opacity: 0;
+				top: 0px;
+				width: 26px;
+				height: 25px;
+				background: url(../img/r-arrow-b.png) no-repeat;
+				right: -30px;
+				transition: 0.5s;
+			}
+		}
+	}
+
+	&.btn-h {
+		width: 220px;
+		&:hover span {
+			padding-left: 30px;
+			padding-right: 0;
+			&:after {
+				opacity: 1;
+				left: 0px;
+			}
+		}
+		span {
+			&:after {
+				content: '';
+				position: absolute;
+				opacity: 0;
+				top: -2px;
+				width: 20px;
+				height: 19px;
+				background: url(../img/l-arrow.png) no-repeat;
+				left: -20px;
+				transition: 0.5s;
+			}
+		}
+	}
+
 	&:active {
 		-webkit-transform: translateY(1px);    
 		-ms-transform: translateY(1px);    
 		transform: translateY(1px);
 	}
-	&.btn-1 {
-		font-size: 30px;
-		padding-left: 120px;
-		padding-right: 120px;
-	}
+
 }
 
 
